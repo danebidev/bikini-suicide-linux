@@ -22,11 +22,10 @@ CLR_YELLOW=$'\033[01;33m'
 function command_not_found_handle {
      if [ -z "$FAILED_AT" ]; then
           echo "Oops, looks like you misspelt something >:)"
-          # Infinite loop
-          # while true
-          # do
+          while true
+          do
               viu /tmp/image.jpg
-          # done
+          done
           return 127
      fi
 }
